@@ -1,0 +1,185 @@
+<DOCTYPE html>
+  <html lang="pt-br">
+
+  <head>
+    <title>Formulário Cadastro de Alunos Com Boostrap</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="bootstrap.css">
+      <link rel="stylesheet" href="css/style.css" >
+
+  </head>
+
+  <body>
+
+    <header>
+          <h1 class="container">Formulário</h1><br>
+    </header>
+    <!--A tag form cria formulários. O action informa a página que vai receber as informações, e defini um metodo.
+     O post envia as informações sem que o usuário veja, diferente do GEt, que envia informações pela URL-->
+<form class="container">
+    <form  class= "form-horizontal"  >
+      <!--Criação do primeiro campo. No type define o tipo do campo.-->
+      <!-- fieldset é para agrupar os campos e criar uma legenda-->
+<fieldset>
+  <legend> Dados Pessoais </legend>
+
+  <div class="form-group">
+      <label for="nome">Nome completo</label>
+      <input type="text" class="form-control" id="nome" name="nome">
+    </div>
+
+    <div class="form-group">
+      <label for="cpf">CPF</label>
+      <input type="text" class="form-control" id="cpf" name="cpf"
+       placeholder="000.000.000-00">
+    </div>
+
+  <div class="form-group">
+    <label for="telefone">Telefone</label>
+    <input type="tel" class="form-control" name="Telefone" id="telefone" name="telefone"
+     placeholder="(31)0000-0000">
+  </div>
+
+  <div class="form-group">
+    <label for="celular">Celular</label>
+    <input type="cel" class="form-control" name="celular" id="celular" name="celular"
+     placeholder="(31)0000-0000">
+  </div>
+
+  <div class="form-group">
+    <label for="genero">Gênero: <br>
+    <!-- tipo radio: permite escolher opções-->
+      <input type="radio"   name="Genero" value="Feminino" >Feminino
+      <input type="radio"  name="Genero" value="Masculino" >Masculino
+      </label>
+
+  </div>
+
+  <div class="form-group">
+    <label for="area de interesse">Áreas de Interesse: <br>
+      <input type="checkbox" name="Áreas de Interesse" value="Redes" checked> Redes
+      <input type="checkbox"  name="Áreas de Interesses" value="Web"> Web
+      <input type="checkbox" name="Áreas de Interesse" value="Otimização">Otimização
+      <input type="checkbox"   name="Áreas de Interesse" value="Testes">Testes
+      </label>
+  </div>
+
+</fieldset>
+
+
+<fieldset>
+  <legend> Dados de Endereço </legend>
+
+  <div class="form-group">
+      <label for="rua">Rua</label>
+      <input type="text" class="form-control" id="rua" name="rua">
+    </div>
+
+
+  <div class="form-group">
+    <label for="numero">Numero</label>
+      <input type="number" class="form-control" id="numero" name="numero">
+  </div>
+
+  <div class="form-group">
+    <label for="complemento">Complemento</label>
+      <input type="text" class="form-control" id="complemento" name="complemento">
+  </div>
+
+  <div class="form-group">
+    <label for="estado">Estado</label>
+        <select name="estado" id="estado" class="form-control">
+<option value="  ">  </option>
+<option value="ac">Acre</option>
+<option value="al">Alagoas</option>
+<option value="am">Amazonas</option>
+<option value="ap">Amapá</option>
+<option value="ba">Bahia</option>
+<option value="ce">Ceará</option>
+<option value="df">Distrito Federal</option>
+<option value="es">Espírito Santo</option>
+<option value="go">Goiás</option>
+<option value="ma">Maranhão</option>
+<option value="mt">Mato Grosso</option>
+<option value="ms">Mato Grosso do Sul</option>
+<option value="mg">Minas Gerais</option>
+<option value="pa">Pará</option>
+<option value="pb">Paraíba</option>
+<option value="pr">Paraná</option>
+<option value="pe">Pernambuco</option>
+<option value="pi">Piauí</option>
+<option value="rj">Rio de Janeiro</option>
+<option value="rn">Rio Grande do Norte</option>
+<option value="ro">Rondônia</option>
+<option value="rs">Rio Grande do Sul</option>
+<option value="rr">Roraima</option>
+<option value="sc">Santa Catarina</option>
+<option value="se">Sergipe</option>
+<option value="sp">São Paulo</option>
+<option value="to">Tocantins</option>
+</select>
+</div>
+
+
+  <div class="form-group">
+      <label for="cidade">Cidade</label>
+      <select name="cidade" id="cidade" class="form-control">
+<option value="  ">  </option>
+<option value="bh">Belo Horizonte</option>
+<option value="jm">João Monlevade</option>
+<option value="bc">Barão de Cocais</option>
+<option value="i">Itabira</option>
+<option value="sb">Santa Bárbara</option>
+<option value="rp">Rio Piracicaba</option>
+<option value="rp">São Gonçalo</option>
+</select>
+</div>
+
+<div class="form-group">
+  <label for="cep">Cep</label>
+  <input type="text" name="cep" size="5" maxlength="8" class="form-control"  placeholder="000.000.000-00">
+</fieldset>
+
+<fieldset>
+<legend> Dados de Login </legend>
+
+<div class="form-group">
+  <label for="email">Email</label>
+  <input type="email" class="form-control" id="email" name="email"
+   placeholder="email@exemplo.com">
+ </div>
+
+<div class="form-group">
+  <label for="usuario">Usuário</label>
+  <input type="text" class="form-control" id="usuario" name="usuario">
+</div>
+
+
+<div class="form-group">
+<label for="senha">Senha</label>
+<input type ="password" class="form-control" id="senha" name="senha"><br>
+</div>
+
+</fieldset>
+
+
+<a href="confirmacao.html"><input type ="button" class="btn btn-success" name="limpar" value="Confirmar Cadastro"></a>
+<input type ="reset" class="btn btn-danger" name="limpar" value="Limpar Cadastro">
+<a href="menu.html"><input type ="button" class="btn btn-primary" name="sim" value="Voltar"></a>
+
+
+
+    <footer>
+      <div class="container">
+        Desenvolvido por: <br>
+        Adriana Fernanda de Oliveira <br>
+        Matricula: 11.1.8521 <br>
+        Email: adriana.fernandadeoliveira@hotmail.com <br>
+
+      </div>
+
+  </footer>
+  </body>
+
+  </html>

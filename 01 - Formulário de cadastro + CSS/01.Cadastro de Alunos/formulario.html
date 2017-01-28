@@ -1,0 +1,128 @@
+<DOCTYPE html>
+  <html lang="pt-br">
+
+  <head>
+    <title>Formulário Cadastro de Alunos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" >
+
+
+  </head>
+
+  <body>
+
+    <header>
+          <h1 class="container">Menu</h1><br>
+    </header>
+    <!--A tag form cria formulários. O action informa a página que vai receber as informações, e defini um metodo.
+     O post envia as informações sem que o usuário veja, diferente do GEt, que envia informações pela URL-->
+    <form class="container" action="cadastro.php"method="POST">
+      <!--Criação do primeiro campo. No type define o tipo do campo.-->
+      <!-- fieldset é para agrupar os campos e criar uma legenda-->
+<fieldset>
+  <legend> Dados Pessoais </legend>
+Nome: <br>
+<input type ="text" name="nome" required autofocus ><br> <!--required deixa o campo obrigatório. Autofocus é para
+   dar foco ao campo.-->
+Data de Nascimento:<br>
+<input type="date" nome="data"><br>
+CPF: <br>
+<input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2"><br>
+Telefone: <br>
+<input type ="tel" name="Telefone"><br>
+Celular: <br>
+<input type ="cel" name="Celular"><br>
+Gênero: <br>
+<input type ="radio" name="genero" value="Feminino" >Feminino<br> <!--radio: permite escolher opções-->
+<input type ="radio" name="genero" value="Masculino">Maculino<br>
+Áreas de Interesse: <br>
+<input type="checkbox" name="areas" value="Redes" checked> Redes<br>
+<input type="checkbox" name="areas" value="Web"> Web<br>
+<input type="checkbox" name="areas" value="Otimização">Otimização<br>
+<input type="checkbox" name="areas" value="Testes">Testes<br>
+</fieldset>
+
+
+<fieldset>
+  <legend> Dados de Endereço </legend>
+Rua: <br>
+<input type ="text" name="rua"><br>
+Numero: <br>
+<input type ="number" name="numero"><br>
+Complemento: <br>
+<input type ="text" name="complemento"><br>
+Estado: <br>
+<select name="estado">
+<option value="  ">  </option>
+<option value="ac">Acre</option>
+<option value="al">Alagoas</option>
+<option value="am">Amazonas</option>
+<option value="ap">Amapá</option>
+<option value="ba">Bahia</option>
+<option value="ce">Ceará</option>
+<option value="df">Distrito Federal</option>
+<option value="es">Espírito Santo</option>
+<option value="go">Goiás</option>
+<option value="ma">Maranhão</option>
+<option value="mt">Mato Grosso</option>
+<option value="ms">Mato Grosso do Sul</option>
+<option value="mg">Minas Gerais</option>
+<option value="pa">Pará</option>
+<option value="pb">Paraíba</option>
+<option value="pr">Paraná</option>
+<option value="pe">Pernambuco</option>
+<option value="pi">Piauí</option>
+<option value="rj">Rio de Janeiro</option>
+<option value="rn">Rio Grande do Norte</option>
+<option value="ro">Rondônia</option>
+<option value="rs">Rio Grande do Sul</option>
+<option value="rr">Roraima</option>
+<option value="sc">Santa Catarina</option>
+<option value="se">Sergipe</option>
+<option value="sp">São Paulo</option>
+<option value="to">Tocantins</option>
+</select>
+<br>
+Cidade: <br>
+<select name="cidade">
+<option value="  ">  </option>
+<option value="bh">Belo Horizonte</option>
+<option value="jm">João Monlevade</option>
+<option value="bc">Barão de Cocais</option>
+<option value="i">Itabira</option>
+<option value="sb">Santa Bárbara</option>
+<option value="rp">Rio Piracicaba</option>
+<option value="rp">São Gonçalo</option>
+</select>
+<br>
+Cep: <br>
+<input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3"><br>
+</fieldset>
+
+<fieldset>
+<legend> Dados de Login </legend>
+Email: <br>
+<input type ="email" name="email" required=""><br>
+Usuário: <br>
+<input type ="text" name="usuario"><br>
+Senha: <br>
+<input type ="password" name="senha"><br>
+</fieldset>
+
+<a href="lista.html"><input type="button" value="Confirmar Cadastro"></a>
+<input type ="reset" name="limpar" value="Limpar Cadastro"><br>
+
+    </form>
+    <footer>
+      <div class="container">
+        Desenvolvido por: <br>
+        Adriana Fernanda de Oliveira <br>
+        Matricula: 11.1.8521 <br>
+        Email: adriana.fernandadeoliveira@hotmail.com <br>
+
+      </div>
+
+  </footer>
+  </body>
+
+  </html>

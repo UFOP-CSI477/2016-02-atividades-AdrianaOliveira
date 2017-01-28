@@ -1,0 +1,79 @@
+*{
+  margin: 0; /*espaço fora da borda*/
+  padding: 0;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1000px;
+}
+
+header{
+background: blue;
+/*Altura do bloco*/
+height: 15%;
+margin-bottom: 10px;
+}
+
+#principal{
+  height: 70%;
+}
+
+
+footer{
+ background: blue;
+height: 15%;
+color: white;
+font-weight: bold; /*negrito*/
+padding: 5px; /*espaço dentro da borda*/
+
+}
+
+h1{
+    font-family: Arial;
+    font-size: 30pt;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    padding: 5px; /*espaço dentro da borda*/
+
+  }
+
+  p{
+    font-family: Arial;
+    font-size: 15pt;
+    color: black;
+    padding: 5px; /*espaço dentro da borda*/
+
+  }
+
+  a{
+    font-family: Arial;
+    font-size: 15pt;
+    color: blue;
+    font-weight: bold; /*negrito*/
+    text-decoration: none;/*remove ou adiciona linhas no texto*/
+  }
+
+.primeiro{
+  text-decoration: none;
+  color: blue;
+  font-weight: bold; /*negrito*/
+  border: blue 1px solid;
+  padding: 5px; /*espaço dentro da borda*/
+
+
+}
+
+/*criando estilo com CSS. para table,th e td vamos ter borda solida. #ooo é preto em hexadecimal */
+
+table,th, td {border:1px solid #000;}
+/*criando estilo com CSS. para th e td vamos colocar espaçamento interno*/
+th, td {padding: 7px;}
+
+h2{
+  font-family: Arial;
+  font-size: 15pt;
+  color: blue;
+  padding: 5px; /*espaço dentro da borda*/
+
+}
