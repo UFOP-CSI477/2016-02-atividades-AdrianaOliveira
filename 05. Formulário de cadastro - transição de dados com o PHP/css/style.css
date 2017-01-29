@@ -1,0 +1,48 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
+*{
+  margin: 0; /*espaço fora da borda*/
+  padding: 0;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1000px;
+}
+
+#principal{
+  height: 70%;
+}
+
+
+header{
+background-color: #c0ffc0;
+height: 10%;
+margin-bottom: 10px;
+font-weight: bold; /*negrito*/
+padding: 5px; /*espaço dentro da borda*/
+}
+
+footer{
+	background-color: #c0ffc0;
+	height: 15%;
+	margin-bottom: 10px;
+	font-weight: bold; /*negrito*/
+	padding: 5px; /*espaço dentro da borda*/
+	display: flex;
+	align-items: center;
+	box-shadow: #bbb -2px 0 5px;
+}
+
+main{
+	padding: 30px 0;
+}
+
+h1{
+    font-family: Arial;
+    font-size: 28pt;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    padding: 2px; /*espaço dentro da borda*/
+
+  }

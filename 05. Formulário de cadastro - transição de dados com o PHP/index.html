@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" integrity="sha256-sEGfrwMkIjbgTBwGLVK38BG/XwIiNC/EAG9Rzsfda6A=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+      <div class="container">
+          <h1>Formulário Cadastro de Alunos<h1>
+      </div>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js" integrity="sha256-uUVS/d3xM3l8YmucAkj1DeRt6U4Y+Xv3ePUgVVEVmVw=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function(){
+            $("form").validate({
+                rules:{
+                    nome: "required",
+
+                    matricula:{
+                      required: true,
+                      minlength:7,
+                      maxlength:7
+                    },
+
+                    cpf:{
+                        required: true,
+                        minlength: 11,
+                        maxlength: 11
+                    },
+
+                    genero: "required",
+
+                    'disciplina[]': "required",
+
+                    telefone: "required",
+                    celular: "required",
+                    email: "required"
+                },
+            });
+        });
+    </script>
+
+    <main class="container">
+        <form method="post" action="form.php" >
+
+
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                      <input type="text" class="form-control " name="nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="matricula" >Matrícula:</label>
+                    <input type="number"class="form-control" name="matricula">
+                </div>
+
+                <div class="form-group">
+                    <label for="cpf" >CPF:</label>
+                    <input type="number"class="form-control" name="cpf" placeholder="00000000000">
+                </div>
+
+                <div class="form-group">
+                    <label for="genero">Gênero:</label>
+                    <input type="radio" name="genero" value="Feminino"> Feminino
+                    <input type="radio" name="genero" value="Masculino"> Masculino
+                </div>
+
+                <div class="form-group">
+                    <label for="disciplina">Disciplinas de interesse:</label>
+                    <br>
+                    <input type="checkbox" name="disciplina[]" value="Teste de Software"> Teste de Software
+                    <br>
+                    <input type="checkbox" name="disciplina[]" value="Linguagens de programação"> Linguagens de programação
+                    <br>
+                    <input type="checkbox" name="disciplina[]" value="Engenharia de Software"> Engenharia de Software
+                    <br>
+                    <input type="checkbox" name="disciplina[]" value="Sistemas Web"> Sistemas Web
+                    <br>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" class="form-control" name="telefone">
+                </div>
+
+                <div class="form-group">
+                    <label for="celular">Celular:</label>
+                    <input type="tel" class="form-control"  name="celular">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" name="email">
+                </div>
+
+
+
+            <button type="submit" class="btn btn-success"> Enviar</button>
+            <input type ="reset" class="btn btn-danger" name="limpar" value="Limpar Cadastro">
+
+
+
+
+        </form>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Desenvolvido por: </p>
+            <p>Adriana Fernanda de Oliveira</p>
+            <p>Matrícula 11.1.8521</p>
+            <a href="mailto:adriana.fernandaeoliveira@hotmail.com" target="_top"> <i class="fa fa-envelope-o" aria-hidden="true"></i> adriana.fernandadeoliveira@hotmail.com
+            </a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
