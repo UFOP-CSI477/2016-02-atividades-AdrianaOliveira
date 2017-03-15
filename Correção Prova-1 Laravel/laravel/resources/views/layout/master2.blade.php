@@ -99,7 +99,7 @@
 		</div>
 
 		<footer class="container-fluid text-center navbar-fixed-bottom">
-		  <p>Michel Wagner Ferreira - 13.1.8490 © Sistema de Controle de Registros em Eventos Esportivos. Todos os direitos reservados.</p>
+		  <p>Adriana Fernanda de Oliveira - 11.1.8521 © Sistema de Controle de Registros em Eventos Esportivos</p>
 		</footer>
 	</div>
 
